@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Nichapa’s Portfolio</title>
+    <!-- All colors/sizes/fonts: style.css   |   All behaviour (slides, rain, page switching): script.js -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="bg" aria-hidden="true"></canvas>
+    <div id="tint" aria-hidden="true"></div>
+    <canvas id="rain" aria-hidden="true"></canvas>
+    <div id="vig" aria-hidden="true"></div>
+    <svg width="0" height="0" style="position: absolute">
+      <defs>
+        <symbol id="flw" viewBox="0 0 100 100">
+          <path
+            d="M50 50C50 20 62 4 88 6 92 36 78 50 50 50ZM50 50C80 50 96 62 94 88 64 92 50 78 50 50ZM50 50C50 80 38 96 12 94 8 64 22 50 50 50ZM50 50C20 50 4 38 6 12 36 8 50 22 50 50Z"
+          />
+        </symbol>
+        <symbol id="chev" viewBox="0 0 24 24">
+          <path
+            d="M5 8l7 7 7-7"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+      </defs>
+    </svg>
+
+    <main>
+      <section class="page on" id="home">
+        <div class="hero title" style="display: block">
+          <h1>
+            <span class="w"
+              >Welcome
+              <svg class="fl" style="fill: var(--petal2)">
+                <use href="#flw" />
+              </svg>
+              to</span
+            >
+            NICHAPA’S PORTFOLIO
+          </h1>
+        </div>
+        <nav class="menu">
+          <a href="#about">About me</a>
+          <a href="#sop">SOP</a>
+          <a href="#recommendation">Recommendation letter</a>
+          <a href="#achcats">Achievements</a>
+        </nav>
+      </section>
+
+      <!-- ==========================================================
+     PAGE: ABOUT ME #1 (id="about")
+     Type your info after each label, e.g.  <b>ชื่อ-สกุล:</b> Your Name
+     MY PICTURE: replace the two <span> with
+       <img class="desk" src="assets/me.jpg"> (computer)  and  <img class="mob" src="assets/me-phone.jpg"> (phone)
+     ========================================================== -->
+      <section class="page" id="about">
+        <div class="title">
+          <h2>About Me</h2>
+        <div class="row">
+          <div class="pic">
+            <img class="desk" src="assets/sch/pic_v.png">
+            <img class="mob" src="assets/sch/pic_h.png">
+          </div>
+          <div class="box info">
+            <p><b>ชื่อ-สกุล: นางสาวนิชาภา ณ. ลำพูน</b></p>
+            <p><b>ชื่อเล่น: หมูแฮม</b></p>
+            <p><b>วัน เดือน ปีเกิด: 22 สิงหาคม พ.ศ. 2551</b> <b>อายุ: 18 ปี</b></p>
+            <p><b>เชื้อชาติ: ไทย</b> <b>สัญชาติ: ไทย</b> <b>ศาสนา: พุทธ</b></p>
+            <p><b>หมู่เลือด: เอบี</b> <b>ส่วนสูง: 151 ซม.</b></p>
+            <p><b>น้ำหนัก: 39 กก.</b></p>
+            <p><b>การศึกษา: กำลังศึกษาชั้นมัธยมศึกษาปีที่ 6/1 </b></p>
+            <p><b>แผนการเรียน: วิทยาศาสตร์-คณิตศาสตร์</b></p>
+            <p><b>โรงเรียน: โรงเรียนจุฬาภรณ์ราชวิทยาลัย ลำปาง</b></p>
+            <p><b>งานอดิเรก: สร้างเกม, เว็บไซต์, เล่นเกม, วาดรูป</b></p>
+            <p><b>ความสามารถ: ทักษะภาษาอังกฤษ, พัฒนาเว็บไซต์, พัฒนาเกม, ทำโครงงานทางวิทยาศาสตร์</b></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="about2">
+        <div class="title"><h2>Educational Background</h2></div>
+                <div class="sch">
+          <div class="s">
+            <h3>โรงเรียนรพีเลิศวิทยา</h3>
+            <br><br><br>
+            <div class="sq"><img src="assets/sch/rpl.png" alt="School Logo"></div>
+            <p>Education level: ระดับชั้นปฐมศึกษา (1-6)</p>
+            <p>Year: 2558-2564</p>
+            <p>GPAX: 3.84</p>
+          </div>
+          <svg class="ch"><use href="#chev" /></svg>
+          <div class="s">
+            <h3>โรงเรียนจักรคำคณาทร จังหวัดลำพูน</h3>
+            <br><br>
+            <div class="sq"><img src="assets/sch/cck.png" alt="School Logo"></div>
+            <p>Education level: ระดับชั้นมัธยมศึกษาตอนต้น (1-3)</p>
+            <p>Year: 2564-2567</p>
+            <p>GPAX: 3.72</p>
+          </div>
+          <svg class="ch"><use href="#chev" /></svg>
+          <div class="s">
+            <h3>โรงเรียนวิทยาศาสตร์จุฬาภรณราชวิทยาลัย ลำปาง</h3>
+            <br>
+            <div class="sq"><img src="assets/sch/pcshslp.png" alt="School Logo"></div>
+            <p>Education level: ระดับชั้นมัธยมศึกษาตอนปลาย (4-6)</p>
+            <p>Year: 2567-2570</p>
+            <p>GPAX: 3.88</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================
+     PAGE: ABOUT ME #3 - IELTS (id="about3")
+     Score: change the "-" inside <span class="badge">
+     Score picture: replace <div class="ipic"></div> with
+       <div class="ipic"><img src="assets/ielts.jpg"></div>
+     ========================================================== -->
+      <section class="page" id="about3">
+        <div class="title"><h2>About Me</h2></div>
+        <div class="row">
+          <div class="pic">
+            <img class="desk" src="assets/sch/pic_v.png">
+            <img class="mob" src="assets/sch/pic_h.png">
+          </div>
+          <div class="box">
+            <div class="ih">
+              <span class="badge">6</span
+              ><span class="out">IELTS Band Score</span>
+            </div>
+            <div class="ipic"><img src="assets/ielts.png"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================
+     PAGE: ABOUT ME #2 - TECH SKILLS (id="about2")
+     Each icon = <div><i style="background:COLOR">LETTER</i>NAME</div>. Copy one <div> to add a skill.
+     To use a real logo: replace <i ...>..</i> with <img src="assets/logo.png" width="60">
+     ========================================================== -->
+      <section class="page" id="about4">
+        <div class="title">
+          <h2>About Me</h2>
+        </div>
+        <div class="row">
+          <div class="pic">
+            <img class="desk" src="assets/sch/pic_v.png">
+            <img class="mob" src="assets/sch/pic_h.png">
+          </div>
+          <div class="box">
+            <h3 class="sub">ความสามารถทางด้านเทคโนโลยี</h3>
+            <div class="tech">
+              <div>
+                <img src="assets/logo/swiftui.png" width="60"><br>Swift
+              </div>
+              <div><img src="assets/logo/godot.png" width="60"><br>Godot</div>
+              <div><img src="assets/logo/unity.png" width="60"><br>Unity</div>
+              <div>
+                <img src="assets/logo/gh.png" width="60"><br><br>GitHub
+              </div>
+              <div>
+                <img src="assets/logo/tc.png" width="60"><br><br>Tinkercad
+              </div>
+              <div>
+                <img src="assets/logo/tm.png" width="60"><br><br>Teachable
+                Machine
+              </div>
+              <div><img src="assets/logo/css.png" width="60"><br><br>CSS</div>
+              <div>
+                <img src="assets/logo/js.png" width="60"><br><br>JavaScript
+              </div>
+              <div><img src="assets/logo/html.png" width="60"><br><br>HTML</div>
+              <div>
+                <img src="assets/logo/py.png" width="60"><br><br>Python
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==========================================================
+     PAGE: STATEMENT OF PURPOSE (id="sop")
+     Replace the text inside <div class="text" id="sopText"> with your own.
+     ========================================================== -->
+      <section class="page" id="sop">
+        <div class="title" style="justify-content: center">
+          <h2>Statement of purpose</h2>
+        </div>
+        <div
+          class="box"
+          style="
+            margin-top: clamp(14px, 3vw, 30px);
+            max-width: min(1000px, 100%);
+            width: fit-content;
+            align-self: center;
+            background-color: #3b4372b7;
+          "
+        >
+          <div class="text" id="sopText">
+             ตั้งแต่เด็ก หนูมีความชื่นชอบในการถ่ายทอดเรื่องราวและประสบการณ์ผ่านงานศิลปะ เพราะหนูรักในการได้แบ่งปันความคิดสร้างสรรค์ให้ผู้อื่นได้รับรู้ จนกระทั่งในช่วงมัธยมศึกษาปีที่ 4 หนูได้มีโอกาสเข้าร่วมกิจกรรมการสร้างเกมด้วยโปรแกรม Unity จุดนั้นเองที่ทำให้หนูค้นพบว่า เกม คือสื่อที่สามารถรวมเอางานศิลปะ การเล่าเรื่อง และเทคโนโลยีเข้าด้วยกันได้อย่างลงตัว
+
+จากจุดเริ่มต้นนั้น หนูได้มุ่งมั่นพัฒนาทักษะการสร้างเกมอย่างจริงจัง จนได้รับเลือกเป็นตัวแทนโรงเรียนเข้าร่วมการแข่งขัน Thailand - Japan Game Programming Hackathon 2024 ในระดับนานาชาติ ภายใต้โจทย์ "Net Zero" โดยทีมของหนูได้ถ่ายทอดแนวคิดนี้ผ่านเกมจำลองการบริหารธุรกิจเฟอร์นิเจอร์ไม้ ซึ่งผู้เล่นต้องรักษาสมดุลระหว่างการเติบโตทางเศรษฐกิจและการดูแลสิ่งแวดล้อมไปพร้อมกัน หากขาดสมดุลด้านใดด้านหนึ่ง เกมจะจบลงทันที เพื่อสะท้อนถึงผลกระทบที่เกิดขึ้นจากการสูญเสียสมดุลในธรรมชาติ ประสบการณ์ครั้งนี้ช่วยผลักดันให้หนูได้นำทักษะด้าน Gameplay Design และ Programming มาประยุกต์ใช้แก้ปัญหาภายใต้ข้อจำกัดของเวลา หนูเรียนรู้และสนุกไปกับการออกแบบระบบการเล่น (Game Mechanics) ให้มีความท้าทาย ลงตัว และสามารถสื่อสารสาระสำคัญไปยังผู้เล่นได้อย่างน่าสนใจ รวมถึงได้ฝึกฝนทักษะการทำงานเป็นทีมและการแก้ปัญหาเฉพาะหน้าอย่างมีประสิทธิภาพ
+
+การตัดสินใจเข้าศึกษาต่อในวิทยาลัยศิลปะ สื่อ และเทคโนโลยี สาขาดิจิทัลเกม มหาวิทยาลัยเชียงใหม่ เกิดจากความเชื่อมั่นในหลักสูตรที่มุ่งเน้นการพัฒนาทักษะเชิงลึกทั้งด้านศาสตร์และศิลป์ของการทำเกม อีกทั้งสถาบันยังมีความเชื่อมโยงกับเครือข่ายอุตสาหกรรมเกม ซึ่งจะเป็นโอกาสสำคัญในการเรียนรู้ประสบการณ์จริงจากผู้เชี่ยวชาญ และเตรียมความพร้อมสู่การทำงานในอุตสาหกรรมได้อย่างเป็นมืออาชีพ
+
+เป้าหมายในอนาคตของหนู คือการเติบโตไปเป็น Game Designer และ Game Programmer มืออาชีพ ที่สามารถนำความรู้และแรงบันดาลใจที่มีมาสร้างสรรค์ผลงานเกมที่มาจากความรักและตั้งใจของหนู หนูตั้งใจที่จะพัฒนาเกมที่ไม่เพียงแต่ให้ความสนุก แต่ยังสามารถถ่ายทอดคุณค่า ข้อคิด และประสบการณ์แปลกใหม่ให้แก่ผู้เล่นได้ค่ะ
+
+          </div>
+          <button class="arrow d" id="sopArrow" aria-label="Scroll down">
+            <svg><use href="#chev" /></svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- ==========================================================
+     PAGE: EDUCATION #1 - SCHOOLS (id="education")
+     Each school = <div class="s"> ... </div>. Fill in: School name, year:, school:, GPAX:
+     School logo: <div class="sq"></div>  ->  <div class="sq"><img src="assets/logo.png"></div>
+     Add a school: copy one <div class="s">...</div> AND one <svg class="ch">...</svg> arrow.
+     ========================================================== -->
+      <section class="page" id="recommendation">
+        <div class="title"><h2>Recommendation Letter</h2></div>
+        <p class="sub2">Transcript</p>
+        <div class="edu2">
+          <div>
+            <div class="shot tall" id="trShot"></div>
+            <div class="dots" id="trDots"></div>
+          </div>
+          <div class="tbl">
+            <div class="hd">
+              ผลการเรียนเฉลี่ย และหน่วยกิต<br />ตามกลุ่มสาระการเรียนรู้
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>หน่วยกิต</th>
+                  <th>ผลการเรียนเฉลี่ย</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>ภาษาไทย</td>
+                  <td>7.0</td>
+                  <td>4.00</td>
+                </tr>
+                <tr>
+                  <td>คณิตศาสตร์</td>
+                  <td>14.0</td>
+                  <td>3.73</td>
+                </tr>
+                <tr>
+                  <td>วิทยาศาสตร์และเทคโนโลยี</td>
+                  <td>35.5</td>
+                  <td>3.86</td>
+                </tr>
+                <tr>
+                  <td>สังคมศึกษา ศาสนา และวัฒนธรรม</td>
+                  <td>4.5</td>
+                  <td>4.00</td>
+                </tr>
+                <tr>
+                  <td>สุขศึกษาและพลศึกษา</td>
+                  <td>2.5</td>
+                  <td>4.00</td>
+                </tr>
+                <tr>
+                  <td>ศิลปะ</td>
+                  <td>2.5</td>
+                  <td>4.00</td>
+                </tr>
+                <tr>
+                  <td>การงานอาชีพ</td>
+                  <td>1.0</td>
+                  <td>4.00</td>
+                </tr>
+                <tr>
+                  <td>ภาษาต่างประเทศ</td>
+                  <td>11.5</td>
+                  <td>4.00</td>
+                </tr>
+                <tr>
+                  <td>รวม</td>
+                  <td>78.5</td>
+                  <td>3.89</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="ft"></div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="page" id="recommendation2">
+        <div class="title"><h2>Recommendation Letter</h2></div>
+        <p class="sub2">หลักฐาน/ประกาศนียบัตรในการเข้าร่วมการแข่งขัน</p><br><br>
+        <div class="s">
+            <div class="shot"> <img src="assets/ach/tj.jpg" width="60">
+            </div><br>
+            <p class="sub2">ระดับนานาชาติ ชนะเลิศเหรียญทอง</p>
+        </div> 
+      </section>
+
+      <section class="page" id="recommendation3">
+        <div class="title"><h2>Recommendation Letter</h2></div>
+        <p class="sub2">หลักฐาน/ประกาศนียบัตรในการเข้าร่วมการแข่งขัน</p><br><br>
+        <div class="s">
+            <div class="shot"> <img src="assets/ach/tg.png" width="60">
+            </div><br>
+            <p class="sub2">ระดับนานาชาติ เหรียญทอง</p>
+        </div> 
+      </section>
+
+      <section class="page" id="recommendation4">
+        <div class="title"><h2>Recommendation Letter</h2></div>
+        <p class="sub2">หลักฐาน/ประกาศนียบัตรในการเข้าร่วมการแข่งขัน</p><br><br>
+        <div class="s">
+            <div class="shot"> <img src="assets/ach/tjf.jpg" width="60">
+            </div><br>
+            <p class="sub2">ระดับประเทศ ชนะเลิศเหรียญทอง</p>
+        </div> 
+      </section>
+
+      <!-- ==========================================================
+     PAGE: ACHIEVEMENT CATEGORIES (id="achcats")
+     Pick a category -> opens the Achievements page with only that category.
+     data-cat must match the cat:"..." text of the events in script.js.
+     ========================================================== -->
+      <section class="page" id="achcats">
+        <div class="title"><h2>Achievements</h2></div>
+        <nav class="menu cats">
+          <a href="#achievements" data-cat="Competition"><svg class="mi"><use href="#flw" /></svg>Competition</a>
+          <a href="#achievements" data-cat="Game Development"><svg class="mi"><use href="#flw" /></svg>Game Development</a>
+          <a href="#achievements" data-cat="Certification"><svg class="mi"><use href="#flw" /></svg>Certification</a>
+          <a href="#achievements" data-cat="Activity"><svg class="mi"><use href="#flw" /></svg>Activity</a>
+          <a href="#achievements" data-cat="Community Service"><svg class="mi"><use href="#flw" /></svg>Community Service</a>
+        </nav>
+      </section>
+
+      <!-- ==========================================================
+     PAGE: ACHIEVEMENTS (id="achievements")
+     This page is empty on purpose - its content comes from script.js (ACHIEVEMENTS DATA).
+     ========================================================== -->
+      <section class="page" id="achievements">
+        <div class="title">
+          <h2>Achievements</h2>
+          <span class="cat" id="achCat"></span>
+        </div>
+        <p class="ev">
+          <span id="achEv"></span>
+          <span class="engine-icons" id="achEngineIcons"></span>
+        </p>
+        <div class="ach">
+          <div>
+            <div class="shot" id="achShot"></div>
+            <div class="dots" id="achDots"></div>
+          </div>
+          <div class="box">
+            <div class="text" id="achText"></div>
+            <button
+              class="arrow d"
+              id="achArrow"
+              aria-label="Scroll down"
+              hidden
+            >
+              <svg><use href="#chev" /></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <a class="arrow next" id="nextLink" href="#about" aria-label="Next page"
+      ><svg style="transform: rotate(-90deg)"><use href="#chev" /></svg
+    ></a>
+    <a class="arrow l home" id="homeLink" href="#home" aria-label="Home"
+      ><svg style="transform: rotate(90deg)"><use href="#chev" /></svg
+    ></a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
